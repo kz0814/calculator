@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(56, 54, 54);
+}
+
+.container {
+    background-color: rgb(255, 255, 255, 0.2);
+    width: 25%;
+    height: 70%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px; /* Set the maximum width */
+    min-width: 350px; /* Set the minimum width */
+    max-height: 700px; /* Set the maximum height */
+    min-height: 400px; /* Set the minimum height */
+}
+
+.displayArea {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    width: 95%;
+    text-align: right;
+    height: 20%;
+    border-radius: 14px;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.numberRow {
+    height: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex; /* Ensure the numberRow itself is a flex container */
+}
+
+.numberRow button {
+    flex: 0 1 auto; /* Make buttons stretch to fill the row */
+    border: none; /* Remove default button border */
+    border-radius: 50%; /* Make the buttons perfectly round */
+    background-color: #302c2c; /* Set a background color */
+    font-size: 1.8em; /* Increase font size */
+    width: 70px; /* Set a fixed width */
+    height: 70px; /* Set a fixed height */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.numberRow button:hover{
+    background-color: orange;
+    color:black;
+}
+.displayCalculation .displayAnswer{
+    flex:1;
+}
